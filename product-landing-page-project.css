@@ -1,0 +1,314 @@
+
+/*=======
+ FONTS
+========*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/*=======
+ WRAPPER
+========*/
+
+.wrapper {
+    min-height: 100%;
+  width: 100%;
+   /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+
+/*=======
+  MAIN
+========*/
+
+main {
+overflow: auto;
+}
+
+
+/*=======
+ HEADERS
+========*/
+
+#header {
+    position: fixed;
+  top: 0;
+  left: 0;
+   width: 100%;
+    height: 228px;
+    object-fit: cover; 
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.80), rgba(117, 19, 93, 0.30)), url(https://i.ibb.co/5hNZSQ6/pexels-photo.jpg);
+  transform: skewY(-4deg); 
+  image-rendering: -webkit-optimize-contrast;
+    background-size: 100% 100%;
+    background-repeat: no-repeat center center scroll;
+   box-shadow: 0 18px 6px rgba(0, 0, 0, 0.10);
+  overflow: hidden;
+}
+
+.head-text {
+ font-family: 'Dancing Script', cursive;
+ font-size: 38px;
+ color: rgb(226, 232, 215);
+ position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 2px;
+} 
+/*h2 headers ONLY*/
+h2 {
+font-family: 'Bitter', serif;
+}
+
+/*========================
+ HORIZONTAL LINE FOR SUB-HEADERS
+=========================*/
+
+h2:before,
+h2:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #000;
+  width: 1.5rem;
+  margin: 1.5rem;
+ }
+
+h2 { 
+ display: flex;
+ flex-direction: row;
+}
+
+/* ==========
+NAVIGATION BAR
+=============*/
+
+#nav-bar, .nav1 {
+    color: rgba(0,0,0, 0.6);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Bitter', serif;
+    font-size: 1.2rem;
+    list-style-type: none;
+   display: inline;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+a:link { 
+  color: rgb(226, 232, 215);
+text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #cddcce;
+}
+
+/*=======
+  BODY
+========*/
+
+html, body {
+ width: 100%;
+  margin: 0;
+ padding-top: 100px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'oxygen';
+  line-height: 1.6;
+}
+
+.products-txt {
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+ /* misc. text */
+.benefits-list > ul {
+  text-align: left;
+  overflow: hidden;
+  list-style-type: square;
+}
+
+.benefits-list > ul li {
+    padding: 5px 0px;
+}
+
+p.joinus-txt {
+  font-family: 'oxygen';
+  font-size: 1.1rem;
+}
+
+h3 { font-family: 'Bitter';
+}
+
+
+/* ==========
+LAYOUT STYLES 
+============= */
+.box {
+  color: #000;
+  padding: 6px;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 16px; 
+  width: 100%;
+}
+
+.container {
+  display: flex;
+    width: 95%;
+  max-width: 850px;
+  flex-direction: column;
+margin: 0 auto;
+  align-items: center;
+  align-content: center;
+  margin-top: 5rem;
+  font-size: 0;
+}
+ 
+
+.box-1 {
+  background: #eeeee4; 
+  padding: 0px;
+  margin: 0;
+  display: table;
+  
+}
+
+.box-2 {
+  background: #fff;
+    padding: 0;
+  margin: 0;
+}
+
+.box-3 {
+ background: #eeeee4; 
+ padding: 0;
+ margin: 0;
+padding-bottom: 5em;
+}
+
+
+/*=======
+  TABLES
+========*/
+
+.eins, .zwei {
+/*   border: 1px solid; */
+  border-radius: 10%;
+  flex-grow: 1;
+ max-width: 32%;
+ background-color: rgba(255, 255, 255, 0.6);
+text-align: center;
+}
+
+.product-tables {
+   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+/* =============
+      IMAGES
+=============== */
+.responsive {
+  width: 50%;
+  height: auto;
+}
+
+img {
+  border-radius: 10%;
+    object-fit: cover;
+}
+
+#header-img {
+  margin: 0;
+float: left;
+  bottom: 0;
+  max-width: 100%;
+  z-index: 2;
+  height: 180px;
+  width: 110px;
+  opacity: 0.5;
+filter: grayscale(100%) sepia(100%) hue-rotate(90deg);
+}
+
+/*=======
+ BUTTONS
+========*/
+
+.btnselect, #submit {
+  background-color: #000;
+  color: #fff;
+ font-family: 'oxygen';
+ text-transform: uppercase;
+ padding: 0.4em; 
+ margin: 1rem;
+ justify-content: center;
+}
+
+
+input[type=email] {
+  width: 200px;
+ padding: 0.5em;
+  border-radius: 1px;
+  font-size: 14px;
+}
+
+/*=========
+  FOOTER
+=========*/
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  min-height: 60px;
+}
+
+.copyright {
+ color: #fff;
+ font-family:'Bitter', serif;
+}
+
+/*=========
+  VIDEO
+========*/
+.product-video {
+    width: 340px;
+    min-height: 50%;
+   padding: 0.1rem;
+}
+
+/*=========
+ MEDIA QUERY
+==========*/
+/* for responsive web design */
+
+@media screen and (max-width: 1280px) {
+  .wrapper, .container, .benefits-list {
+    width: 100%;
+  }
+}
